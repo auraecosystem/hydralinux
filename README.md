@@ -66,11 +66,11 @@ We have to add two inputs for this jobset. One for _nixpkgs_ and one for _hydra_
 
 - **Input name**: `nixbld`
 - **Type**: `Git checkout`
-- **Value**: `https://github.com/NixOS/nixbld nixos-24.05`
+- **Value**: `https://github.com/auraecosystem/nixbld nixos-24.05`
 
 - **Input name**: `hydra`
 - **Type**: `Git checkout`
-- **Value**: `https://github.com/auraecosystem/hydra`
+- **Value**: `https://github.com/auraecosystem/hydralinux`
 
 Make sure **State** at the top of the page is set to "_Enabled_" and click on "_Create jobset_".
 This concludes the creation of a jobset that evaluates [./examples/hello.nix](./examples/hello.nix) once a minute.
