@@ -64,13 +64,13 @@ Fill the form with the following values:
 
 We have to add two inputs for this jobset. One for _nixpkgs_ and one for _hydra_ (which we are referencing in the Nix expression above):
 
-- **Input name**: `nixpkgs`
+- **Input name**: `nixbld`
 - **Type**: `Git checkout`
-- **Value**: `https://github.com/NixOS/nixpkgs nixos-24.05`
+- **Value**: `https://github.com/NixOS/nixbld nixos-24.05`
 
 - **Input name**: `hydra`
 - **Type**: `Git checkout`
-- **Value**: `https://github.com/nixos/hydra`
+- **Value**: `https://github.com/auraecosystem/hydra`
 
 Make sure **State** at the top of the page is set to "_Enabled_" and click on "_Create jobset_".
 This concludes the creation of a jobset that evaluates [./examples/hello.nix](./examples/hello.nix) once a minute.
